@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забрал пятницу</title>
+    <script src="script.js" defer></script>
+    <link rel="icon"
+        href="https://yt3.googleusercontent.com/ytc/AOPolaT9bqXW1_qZl5jvuLWgkcZOXzrjnOvEHYBC0yoA=s900-c-k-c0x00ffffff-no-rj"
+        type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="backcon"></div>
+    <div class="site__title">
+        <h1>СОЗДАВАЙ ГЕРОЯ И ИДИ В БОЙ🏆</h1>
+    </div>
+    <div id="container">
+        <div id="left-panel">
+            <div class="title">
+                <h2>Создай героя</h2>
+            </div>
+            <form id="sportsmanForm">
+                <input type="text" id="name" required placeholder="Имя" max="99" min="1">
+                <input type="number" id="strength" required placeholder="Сила" max="99" min="1">
+                <input type="number" id="endurance" required placeholder="Выносливость" max="99" min="1">
+                <input type="number" id="speed" required placeholder="Скорость" max="99" min="1">
+                <button type="button" onclick="createSportsman()">Создать героя</button>
+            </form>
+        </div>
+        <div id="right-panel">
+            <div class="title">
+                <h2>Оппонент</h2>
+            </div>
+            <div id="opponentCard"></div>
+            <button type="button" onclick="fetchRandomOpponent()" id="getEnemyButton">Получить соперника</button>
+            <button type="button" id="fightButton" onclick="fight()">Сразиться</button>
+        </div>
+    </div>
+    <div id="result"></div>
+    <div class="copyright">Made by Sam Kochkin©</div>
+</body>
+
+</html>

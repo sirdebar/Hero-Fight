@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
+#backcon {
+  filter: blur(5px);
+  background-image: url(imgs/bck.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.site__title {
+  color: #ffffff;
+  margin: 40px;
+  text-align: center;
+  font-family: Mont;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+#left-panel,
+#right-panel {
+  height: 500px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #15172b;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  color: #ccc;
+  font-family: Mont;
+}
+
+#getEnemyButton {
+  margin-bottom: 10px;
+}
+
+#opponentCard {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  width: 200px;
+  margin: 20px auto;
+}
+
+#sportsmanForm {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, #1fd1f9, #b621fe);
+  color: #000000;
+  margin: 0 auto;
+  display: block;
+  font-family: Montm;
+  transition: all 1s ease-in;
+}
+
+button:hover {
+  width: 200px;
+}
+
+form {
+  padding: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+button:active {
+  color: transparent;
+  background-color: #4caf50;
+}
+
+input {
+  text-align: center;
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 20px;
+  margin: 10px 0 10px 0;
+  width: 100%;
+  font-family: Montm;
+}
+
+#result {
+  color: #ffffff;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: Mont;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montm;
+  src: url(fonts/Montserrat-Medium.ttf);
+}
